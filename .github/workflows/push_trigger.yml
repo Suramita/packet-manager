@@ -233,11 +233,11 @@ jobs:
       - name: Build with Maven
         run: |
           cd commons-packet
-          mvn -B package -s $GITHUB_WORKSPACE/settings.xml -Dmaven.test.failure.ignore=true --file pom.xml 
+          mvn -B package -s $GITHUB_WORKSPACE/settings.xml -Dmaven.test.failure.ignore=true --file pom.xml -X
       - name: Analyze with SonarCloud
         run: |
           cd commons-packet
-          mvn -B -Dgpg.skip verify sonar:sonar -Dmaven.test.failure.ignore=true -Dsonar.projectKey=Suramita_packet-manager -Dsonar.organization=suramita -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+          mvn -B -Dgpg.skip verify sonar:sonar -Dmaven.test.failure.ignore=true -Dsonar.projectKey=Suramita_packet-manager -Dsonar.organization=suramita -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }} -X
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
