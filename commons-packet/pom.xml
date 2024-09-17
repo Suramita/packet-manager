@@ -278,6 +278,7 @@
             <profile>
                 <id>sonar</id>
                 <properties>
+		     <sonar.organization>suramita</sonar.organization>
 		    <sonar.organization>suramita</sonar.organization>
                     <sonar.sources>.</sonar.sources>
                     <sonar.inclusions>src/main/java/**,src/main/resources/**</sonar.inclusions>
