@@ -12,7 +12,7 @@
     <description>Common packet manager for MOSIP</description>
     <url>https://github.com/mosip/packet-manager</url>
     
-    <packaging>pom</packaging>
+    <packaging>pom</packaging> 
 
     <properties>
         <!-- maven -->
