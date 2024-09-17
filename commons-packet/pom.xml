@@ -68,6 +68,14 @@
         <build>
           
             <plugins>
+		    <plugin>
+		    <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.26</version> <!-- Update to the latest version -->
+    <scope>provided</scope>
+</dependency>
+	    </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
