@@ -231,7 +231,7 @@ jobs:
       - name: mvn clean
         run: |
           cd commons-packet
-          mvn clean install -U
+          mvn clean install -U -X
          
             
       - name: Build with Maven
