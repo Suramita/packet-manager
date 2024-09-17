@@ -230,6 +230,7 @@ jobs:
         
       - name: mvn clean
         run: |
+          cd commons-packet
           mvn clean install -U
          
             
