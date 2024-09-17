@@ -85,7 +85,9 @@
                     <configuration>
                         <skipTests>${skipTests}</skipTests>
                         <skip>false</skip>
-                        <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
+                        <argLine>
+                            --illegal-access=permit
+                        </argLine>
                     </configuration>
                 </plugin>
                 <plugin>
