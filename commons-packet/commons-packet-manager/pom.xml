@@ -51,6 +51,11 @@
         <sonar.cpd.exclusions>**/dto/**,**/entity/**,**/config/**</sonar.cpd.exclusions>
     </properties>
     <dependencies>
+	    <dependency> <groupId>org.projectlombok</groupId> 
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.26</version> <!-- Update to the latest version -->
+		    <scope>provided</scope> 
+	    </dependency>
         <dependency>
             <groupId>io.mosip.kernel</groupId>
             <artifactId>kernel-idobjectvalidator</artifactId>
