@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <maven.compiler.version>3.8.0</maven.compiler.version>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
          <maven.surefire.plugin.version>2.22.0</maven.surefire.plugin.version>
         <maven.jar.plugin.version>3.0.2</maven.jar.plugin.version>
         <maven.war.plugin.version>3.1.0</maven.war.plugin.version>
@@ -145,6 +145,10 @@
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
+		   <compilerArgs>
+                       <arg>--add-exports</arg>
+                       <arg>jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
