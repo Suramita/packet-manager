@@ -71,7 +71,7 @@
 		    <plugin>
                       <groupId>org.projectlombok</groupId>
                          <artifactId>lombok</artifactId>
-                         <version>1.18.26</version> <!-- Update to the latest version -->
+                         <version>1.18.34</version> <!-- Update to the latest version -->
 	    </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
